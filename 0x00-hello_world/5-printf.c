@@ -1,14 +1,11 @@
 #include <stdio.h>
-
 /**
-* main - entry point
-*
-* description - a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
-* return 0
-*/
+ *main - Entry point
+ *
+ *Return: retun 1 after program execution
+ */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
-		return (0);
+	return (0);
 }
-
