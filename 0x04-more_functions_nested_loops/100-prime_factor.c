@@ -1,31 +1,18 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * print_triangle - a function that prints a triangle
- * @size: size of the triangle
- * Return: triangle of '#'s
+ * main - Prints out the larget prime factor of 612852475143
+ * Return:return 0 with success.
  */
-void print_triangle(int size)
+int main(void)
 {
-	int sp, ro, tr;
+	long i;
+	long num = 612852475143;
 
-	if (size <= 0)
+	for (i = 2; i < num; i++)
 	{
-		_putchar('\n');
+		if (num % i == 0)
+			num /= i;
 	}
-	else
-	{
-		for (ro = 0; ro <= (size - 1); ro++)
-		{
-			for (sp = 0; sp < (size - 1) - ro; sp++)
-			{
-				_putchar(' ');
-			}
-			for (tr = 0; tr <= ro; tr++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
-	}
+	printf("%li\n", num);
+	return (0);
 }
